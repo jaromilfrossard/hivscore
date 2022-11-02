@@ -3,3 +3,12 @@
 .Rdata
 .httr-oauth
 .DS_Store
+test.R
+var.txt
+units.txt
+data_vacs2_sas_score.txt
+data_dataids.csv
+write_data.R
+Score_Calc_examples.xlsx
+vacs1.xlsx
+vacs2.xlsx
