@@ -47,7 +47,6 @@
 
 
 
-
 #' Test data the DAT'aids score
 #'
 #' A dataset for testing the DAT'aids score

@@ -3,6 +3,8 @@
 .Rdata
 .httr-oauth
 .DS_Store
+vacs1.xlsx
+vacs2.xlsx
 test.R
 var.txt
 units.txt
