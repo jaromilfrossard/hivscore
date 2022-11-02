@@ -1,0 +1,13 @@
+variable  shcs      dataids          vacs2
+wbc       #/$mu$l   -                #/ml
+cd4       #/$mu$l   #/mm^2           #/$mu$l
+hiv1_rna  #/ml      #/ml             #/$mu$l
+hemo      g/ml      g/dl             g/dl
+alb       g/l       -                g/dl
+alt       IU/l      -
+ast       IU/l      -
+plt       10^9/l    -
+fib4      -         -
+egfr      -         ml/min/1.73m^2   ml/min
+bmi       -         kg/m^2           kg/m^2
+scr                 mumol/l

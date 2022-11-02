@@ -1,0 +1,23 @@
+hiscore vs shcs_var
+age            = computed
+alb            = filter ITEM == ALB in LAB2
+alt            = filter ITEM == ALT in LAB2
+anemia         = computed anemia()
+ast            = filter ITEM == AST in LAB2
+cardio_disease = computed ??
+cirrhosis      = filter CLIN_ID ==CIR/PER? in CLINICAL/VAR_CLINICAL
+bmi            = computed bmi()
+cd4_count      = CD4 in LAB
+egfr           = computed efgr()
+fib4           = computed fib4()
+hepc           = ANTIHCV in LAB
+hgb            = HEM in LAB
+hiv1_rna       = RNA in LAB
+low_bmi        = computed low_bmi()
+nonhiv_cancer  = CANCER in DIS
+plt            = PLA in LAB
+sex            = SEX in PAT
+src            = filter ITEM == CRE in LAB2
+vl_log         = computed log10 RNA
+wbc            = LEU in LAB
+

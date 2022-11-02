@@ -1,0 +1,76 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# hivscore
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The `hivscore` package is an implementation of the VACS Index 1, the VACS Index 2 and the Dat'AIDS score.
+
+## Installation
+
+You can install the development version of the `hivscore` package like so:
+
+``` r
+remotes::install_github("jaromilfrossard/hivscore")
+```
+
+## Computing the scores
+
+You can compute the VACS Index 1:
+
+```{r ex_v1}
+library(hivscore)
+data("vacs1")
+vacs1$score_vacs1 <- score_vacsindex1(
+  age = vacs1$age, cd4_count = vacs1$cd4, hiv1_rna = vacs1$hiv1_rna,
+  hgb = vacs1$hgb, fib4 = vacs1$fib4, egfr = vacs1$egfr,
+  hepc = vacs1$hepc)
+head(vacs1)
+```
+
+For the VACS Index 2, you will use:
+
+```{r ex_v2}
+data("vacs2")
+vacs2$score_vacs2 <- score_vacsindex2(
+  age = vacs2$AGE, cd4_count = vacs2$CD4,vl_log = vacs2$VL_LOG,
+  hgb = vacs2$HGB,fib4 = vacs2$FIB4,egfr = vacs2$EGFR,
+  hepc = vacs2$HEPC==1, alb = vacs2$ALB, bmi = vacs2$BMI,
+  wbc = vacs2$WBC)
+head(vacs2)
+```
+
+The Dat'AIDS score can be computed using:
+```{r ex_dataids}
+data("dataids")
+dataids$dataids <- score_dataids(
+  age = dataids$age,cd4_count = dataids$cd4_count, nonhiv_cancer = dataids$nonhiv_cancer,
+  cardio_disease = dataids$cardio_disease,egfr = dataids$egfr, cirrhosis = dataids$cirrhosis,
+  low_bmi = dataids$low_bmi,anemia = dataids$anemia)
+head(dataids)
+```
+
+## Predicting survival probabilities
+
+Using the Dat'AIDS score, you can predict survival probabilities after 1 year:
+
+```{r ex_surv}
+dataids$surv_prob1 <- surv_dataids(1, score = dataids$dataids)
+head(dataids)
+```
+
+
