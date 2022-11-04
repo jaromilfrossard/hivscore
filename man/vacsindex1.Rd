@@ -51,6 +51,13 @@ A numerical vector.
 \description{
 Compute the VACS Index 1 survival prediction
 }
+\examples{
+data("vacs1")
+vacs1$score_vacs1 <- score_vacsindex1(
+    age = vacs1$age, cd4_count = vacs1$cd4, hiv1_rna = vacs1$hiv1_rna,
+    hgb = vacs1$hgb, fib4 = vacs1$fib4, egfr = vacs1$egfr,
+    hepc = vacs1$hepc)
+}
 \references{
 Tate, J. P., Justice, A. C., Hughes, M. D., Bonnet, F., Reiss, P., Mocroft, A., ... & Sterne, J. A. (2013). An internationally generalizable risk index for mortality after one year of antiretroviral therapy. AIDS (London, England), 27(4), 563.
 

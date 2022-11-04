@@ -18,9 +18,14 @@
 #' @references Justice, A. C., Modur, S., Tate, J. P., Althoff, K. N., Jacobson, L. P., Gebo, K., ... & Gange, S. J. (2013). Predictive accuracy of the Veterans Aging Cohort Study (VACS) index for mortality with HIV infection: a north American cross cohort analysis. Journal of acquired immune deficiency syndromes (1999), 62(2), 149.
 #'
 #' @name vacsindex1
+#' @examples
+#' data("vacs1")
+#' vacs1$score_vacs1 <- score_vacsindex1(
+#'     age = vacs1$age, cd4_count = vacs1$cd4, hiv1_rna = vacs1$hiv1_rna,
+#'     hgb = vacs1$hgb, fib4 = vacs1$fib4, egfr = vacs1$egfr,
+#'     hepc = vacs1$hepc)
 NULL
 
-#' @export
 #' @rdname vacsindex1
 surv_vacsindex1 <- function(time, baseline_fun, score=NULL,age=NULL, cd4_count=NULL,
                             hiv1_rna=NULL, hgb=NULL, fib4=NULL, egfr=NULL,

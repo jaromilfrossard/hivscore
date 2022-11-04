@@ -29,7 +29,6 @@
 NULL
 
 
-#'@export
 #'@rdname vacsindex2
 surv_vacsindex2 <- function(time, baseline_fun, score=NULL,age=NULL, cd4_count=NULL,
                             vl_log=NULL, hgb=NULL, fib4=NULL, egfr=NULL,
