@@ -2,46 +2,26 @@
 % Please edit documentation in R/vacsindex1.R
 \name{vacsindex1}
 \alias{vacsindex1}
-\alias{surv_vacsindex1}
 \alias{score_vacsindex1}
 \alias{points_vacsindex1}
-\title{Compute the VACS Index 1 survival prediction}
+\title{Compute the VACS Index 1}
 \usage{
-surv_vacsindex1(
-  time,
-  baseline_fun,
-  score = NULL,
-  age = NULL,
-  cd4_count = NULL,
-  hiv1_rna = NULL,
-  hgb = NULL,
-  fib4 = NULL,
-  egfr = NULL,
-  hepc = NULL
-)
-
 score_vacsindex1(age, cd4_count, hiv1_rna, hgb, fib4, egfr, hepc)
 
 points_vacsindex1()
 }
 \arguments{
-\item{time}{Numeric. Time of prediction in year.}
+\item{age}{Numeric. Age in years.}
 
-\item{baseline_fun}{Function of \code{time}.}
+\item{cd4_count}{Numeric. CD4 cell count. cell/mm\eqn{^3}.}
 
-\item{score}{Numeric. VACS index 1 score. If NULL, it will be computed based on the covariates.}
-
-\item{age}{Numeric. Years}
-
-\item{cd4_count}{Numeric. CD4 cell count. cell/mm^3}
-
-\item{hiv1_rna}{Numeric. Viral load. copies/mL}
+\item{hiv1_rna}{Numeric. Viral load. copies/mL.}
 
 \item{hgb}{Numeric. Hemoglobin. g/dL.}
 
 \item{fib4}{Numeric. Fibrosis-4 Index for Liver Fibrosis.}
 
-\item{egfr}{Numeric. Estimated glomerular filtration rate. (ml/mn/1.73m2).}
+\item{egfr}{Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).}
 
 \item{hepc}{Logical. TRUE for co-infection with hepatitis C virus.}
 }
@@ -49,7 +29,7 @@ points_vacsindex1()
 A numerical vector.
 }
 \description{
-Compute the VACS Index 1 survival prediction
+Compute the VACS Index 1
 }
 \examples{
 data("vacs1")

@@ -2,41 +2,18 @@
 % Please edit documentation in R/vacsindex2.R
 \name{vacsindex2}
 \alias{vacsindex2}
-\alias{surv_vacsindex2}
 \alias{score_vacsindex2}
 \alias{points_vacindex2}
-\title{Compute the VACS Index 2 survival prediction.}
+\title{Compute the VACS Index 2.}
 \usage{
-surv_vacsindex2(
-  time,
-  baseline_fun,
-  score = NULL,
-  age = NULL,
-  cd4_count = NULL,
-  vl_log = NULL,
-  hgb = NULL,
-  fib4 = NULL,
-  egfr = NULL,
-  hepc = NULL,
-  alb = NULL,
-  bmi = NULL,
-  wbc = NULL
-)
-
 score_vacsindex2(age, cd4_count, vl_log, hgb, fib4, egfr, hepc, alb, bmi, wbc)
 
 points_vacindex2()
 }
 \arguments{
-\item{time}{Numeric.}
-
-\item{baseline_fun}{Function of \code{time}.}
-
-\item{score}{Numeric. Vacs Index 2 score. If NULL, it will be computed based on the covariates.}
-
 \item{age}{Numeric. Year.}
 
-\item{cd4_count}{Numeric. CD4 cell count. cell/mm^3.}
+\item{cd4_count}{Numeric. CD4 cell count. cell/mm\eqn{^3}.}
 
 \item{vl_log}{Numeric. log 10 of viral load.}
 
@@ -44,21 +21,21 @@ points_vacindex2()
 
 \item{fib4}{Numeric. Fibrosis-4 Index for Liver Fibrosis.}
 
-\item{egfr}{Numeric. Estimated glomerular filtration rate. (ml/mn/1.73m2).}
+\item{egfr}{Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).}
 
 \item{hepc}{Logical. TRUE for co-infection with hepatitis C virus.}
 
 \item{alb}{Numeric. Albumin. g/dL.}
 
-\item{bmi}{Numeric. Body mass index. m/kg^2.}
+\item{bmi}{Numeric. Body mass index. m/kg\eqn{^2}.}
 
-\item{wbc}{Numeric. White blood cell. 10^3 count/muL.}
+\item{wbc}{Numeric. White blood cell. \eqn{10^3} count/µL.}
 }
 \value{
 A numerical vector.
 }
 \description{
-Compute the VACS Index 2 survival prediction.
+Compute the VACS Index 2.
 }
 \examples{
 data("vacs2")

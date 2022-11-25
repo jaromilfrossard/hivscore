@@ -1,14 +1,14 @@
-#' Compute the VACS Index 1 survival prediction
+#' Compute the VACS Index 1
 #'
-#' @param time Numeric. Time of prediction in year.
-#' @param baseline_fun Function of \code{time}.
-#' @param score Numeric. VACS index 1 score. If NULL, it will be computed based on the covariates.
-#' @param age Numeric. Years
-#' @param cd4_count Numeric. CD4 cell count. cell/mm^3
-#' @param hiv1_rna Numeric. Viral load. copies/mL
+# @param time Numeric. Time of prediction in year.
+# @param baseline_fun Function of \code{time}.
+# @param score Numeric. VACS index 1 score. If NULL, it will be computed based on the predictors.
+#' @param age Numeric. Age in years.
+#' @param cd4_count Numeric. CD4 cell count. cell/mm\eqn{^3}.
+#' @param hiv1_rna Numeric. Viral load. copies/mL.
 #' @param hgb Numeric. Hemoglobin. g/dL.
 #' @param fib4 Numeric. Fibrosis-4 Index for Liver Fibrosis.
-#' @param egfr Numeric. Estimated glomerular filtration rate. (ml/mn/1.73m2).
+#' @param egfr Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).
 #' @param hepc Logical. TRUE for co-infection with hepatitis C virus.
 #'
 #' @return A numerical vector.
@@ -26,16 +26,16 @@
 #'     hepc = vacs1$hepc)
 NULL
 
-#' @rdname vacsindex1
-surv_vacsindex1 <- function(time, baseline_fun, score=NULL,age=NULL, cd4_count=NULL,
-                            hiv1_rna=NULL, hgb=NULL, fib4=NULL, egfr=NULL,
-                            hepc=NULL){
-  if(is.null(score)){
-    score <- score_vacsindex1(age=age, cd4_count=cd4_count, hiv1_rna = hiv1_rna,
-                              hgb=hgb, fib4=fib4, egfr=egfr, hepc=hepc)
-    }
-  baseline_fun(time)^(exp(score))
-  }
+# #' @rdname vacsindex1
+# surv_vacsindex1 <- function(time, baseline_fun, score=NULL,age=NULL, cd4_count=NULL,
+#                             hiv1_rna=NULL, hgb=NULL, fib4=NULL, egfr=NULL,
+#                             hepc=NULL){
+#   if(is.null(score)){
+#     score <- score_vacsindex1(age=age, cd4_count=cd4_count, hiv1_rna = hiv1_rna,
+#                               hgb=hgb, fib4=fib4, egfr=egfr, hepc=hepc)
+#     }
+#   baseline_fun(time)^(exp(score))
+#   }
 
 #' @export
 #' @rdname vacsindex1

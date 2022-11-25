@@ -1,18 +1,18 @@
-#' Compute the VACS Index 2 survival prediction.
+#' Compute the VACS Index 2.
 #'
-#' @param time Numeric.
-#' @param baseline_fun Function of \code{time}.
-#' @param score Numeric. Vacs Index 2 score. If NULL, it will be computed based on the covariates.
+# @param time Numeric.
+# @param baseline_fun Function of \code{time}.
+# @param score Numeric. Vacs Index 2 score. If NULL, it will be computed based on the predictors.
 #' @param age Numeric. Year.
-#' @param cd4_count Numeric. CD4 cell count. cell/mm^3.
+#' @param cd4_count Numeric. CD4 cell count. cell/mm\eqn{^3}.
 #' @param vl_log Numeric. log 10 of viral load.
 #' @param hgb Numeric. Hemoglobin. g/dL.
 #' @param fib4 Numeric. Fibrosis-4 Index for Liver Fibrosis.
-#' @param egfr Numeric. Estimated glomerular filtration rate. (ml/mn/1.73m2).
+#' @param egfr Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).
 #' @param hepc Logical. TRUE for co-infection with hepatitis C virus.
 #' @param alb Numeric. Albumin. g/dL.
-#' @param bmi Numeric. Body mass index. m/kg^2.
-#' @param wbc Numeric. White blood cell. 10^3 count/muL.
+#' @param bmi Numeric. Body mass index. m/kg\eqn{^2}.
+#' @param wbc Numeric. White blood cell. \eqn{10^3} count/µL.
 #'
 #' @return A numerical vector.
 #'
@@ -29,17 +29,17 @@
 NULL
 
 
-#'@rdname vacsindex2
-surv_vacsindex2 <- function(time, baseline_fun, score=NULL,age=NULL, cd4_count=NULL,
-                            vl_log=NULL, hgb=NULL, fib4=NULL, egfr=NULL,
-                            hepc=NULL, alb=NULL, bmi=NULL, wbc=NULL){
-  if(is.null(score)){
-    score <- score_vacsindex2(age=age, cd4_count=cd4_count, vl_log = vl_log,
-                              hgb=hgb, fib4=fib4, egfr=egfr, hepc=hepc,
-                              alb=alb, bmi=bmi,wbc=wbc)
-  }
-  baseline_fun(time)^(exp(score))
-}
+# #'@rdname vacsindex2
+# surv_vacsindex2 <- function(time, baseline_fun, score=NULL,age=NULL, cd4_count=NULL,
+#                             vl_log=NULL, hgb=NULL, fib4=NULL, egfr=NULL,
+#                             hepc=NULL, alb=NULL, bmi=NULL, wbc=NULL){
+#   if(is.null(score)){
+#     score <- score_vacsindex2(age=age, cd4_count=cd4_count, vl_log = vl_log,
+#                               hgb=hgb, fib4=fib4, egfr=egfr, hepc=hepc,
+#                               alb=alb, bmi=bmi,wbc=wbc)
+#   }
+#   baseline_fun(time)^(exp(score))
+# }
 
 
 

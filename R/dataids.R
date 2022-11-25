@@ -4,12 +4,12 @@
 #' @param basesurv_fun Function of \code{time}. Default is \code{basesurv_hentzien2018}.
 #' @param beta_score Numberic. Default is \code{0.1008354015} for continuous score and \code{c("0-3"=0, "4-13"=0.81868, "14-19"=1.76034, ">=20"=2.61992)} for risk group. Parameter associated to the score.
 #' @param eta_fun Function of the score which returns the linear predictor. Default is \code{eta_dataids} and \code{eta_riskgroupdataids} is available.
-#' @param score Numeric. DAT'aids score. If NULL, it will be computed based on the covariates.
+#' @param score Numeric. DAT'aids score. If NULL, it will be computed based on the predictors.
 #' @param age Numeric. Age in year.
-#' @param cd4_count Numeric. Count of cd4 cell/mm3.
+#' @param cd4_count Numeric. Count of cd4 cell/mm\eqn{^3}.
 #' @param nonhiv_cancer Logical. TRUE for diagnosis of non-hiv cancer.
 #' @param cardio_disease Logical. TRUE for diagnosis of cardio vascular disease.
-#' @param egfr Numeric. Estimated glomerular filtration rate. (ml/mn/1.73m2).
+#' @param egfr Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).
 #' @param cirrhosis Logical. TRUE for cirrhosis diagnostic.
 #' @param low_bmi Logical. TRUE if BMI < 18.5.
 #' @param anemia Logical. TRUE for anemia defined as hemoglobin <12g/dL for female and <13g/dL for male.

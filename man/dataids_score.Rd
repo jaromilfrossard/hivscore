@@ -69,7 +69,7 @@ points_dataids()
 \arguments{
 \item{time}{Numeric. Time of prediction in year.}
 
-\item{score}{Numeric. DAT'aids score. If NULL, it will be computed based on the covariates.}
+\item{score}{Numeric. DAT'aids score. If NULL, it will be computed based on the predictors.}
 
 \item{basesurv_fun}{Function of \code{time}. Default is \code{basesurv_hentzien2018}.}
 
@@ -77,13 +77,13 @@ points_dataids()
 
 \item{age}{Numeric. Age in year.}
 
-\item{cd4_count}{Numeric. Count of cd4 cell/mm3.}
+\item{cd4_count}{Numeric. Count of cd4 cell/mm\eqn{^3}.}
 
 \item{nonhiv_cancer}{Logical. TRUE for diagnosis of non-hiv cancer.}
 
 \item{cardio_disease}{Logical. TRUE for diagnosis of cardio vascular disease.}
 
-\item{egfr}{Numeric. Estimated glomerular filtration rate. (ml/mn/1.73m2).}
+\item{egfr}{Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).}
 
 \item{cirrhosis}{Logical. TRUE for cirrhosis diagnostic.}
 
