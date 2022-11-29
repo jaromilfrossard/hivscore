@@ -22,6 +22,7 @@
 #'
 #' @return Numeric. Predicted survival probability.
 #' @name dataids_score
+#' @family dataids_score
 #' @examples
 #' data(dataids)
 #' dataids$dataids <- score_dataids(

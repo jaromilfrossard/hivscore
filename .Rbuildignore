@@ -11,3 +11,7 @@ write_data.R
 Score_Calc_examples.xlsx
 vacs1.xlsx
 vacs2.xlsx
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$

@@ -49,3 +49,4 @@ Tate, J. P., Sterne, J. A., Justice, A. C., Study, V. A. C., & Antiretroviral Th
 
 McGinnis, K. A., Justice, A. C., Moore, R. D., Silverberg, M. J., Althoff, K. N., Karris, M., ... & Study, V. A. C. (2021). Discrimination And Calibration Of The Vacs Index 2.0 For Predicting Mortality Among People With Hiv In North America. Clinical Infectious Diseases: an Official Publication of the Infectious Diseases Society of America.
 }
+\concept{vacsindex2}

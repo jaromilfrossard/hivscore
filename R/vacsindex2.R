@@ -20,6 +20,7 @@
 #' @references McGinnis, K. A., Justice, A. C., Moore, R. D., Silverberg, M. J., Althoff, K. N., Karris, M., ... & Study, V. A. C. (2021). Discrimination And Calibration Of The Vacs Index 2.0 For Predicting Mortality Among People With Hiv In North America. Clinical Infectious Diseases: an Official Publication of the Infectious Diseases Society of America.
 #'
 #' @name vacsindex2
+#' @family vacsindex2
 #' @examples
 #' data("vacs2")
 #' vacs2$score_vacs2 <- score_vacsindex2(

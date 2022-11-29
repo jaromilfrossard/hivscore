@@ -45,3 +45,4 @@ Bebu, I., Tate, J., Rimland, D., Mesner, O., Macalino, G. E., Ganesan, A., ... &
 
 Justice, A. C., Modur, S., Tate, J. P., Althoff, K. N., Jacobson, L. P., Gebo, K., ... & Gange, S. J. (2013). Predictive accuracy of the Veterans Aging Cohort Study (VACS) index for mortality with HIV infection: a north American cross cohort analysis. Journal of acquired immune deficiency syndromes (1999), 62(2), 149.
 }
+\concept{vacsindex1}

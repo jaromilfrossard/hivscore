@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Jaromil Frossard
 Maintainer: Jaromil Frossard <jaromil.frossard@gmail.com>
 Description: The hivscore package includes the implementation of the VACS Index 1, VACS Index 2 and Dat'AIDS score.
-License: AGPL (>= 3) + file LICENSE
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: 
@@ -16,5 +16,6 @@ Imports:
     dplyr
 Depends: 
     R (>= 2.10)
-URL: https://github.com/jaromilfrossard/hivscore
+URL: https://github.com/jaromilfrossard/hivscore,
+    https://jaromilfrossard.github.io/hivscore/
 BugReports: https://github.com/jaromilfrossard/hivscore/issues

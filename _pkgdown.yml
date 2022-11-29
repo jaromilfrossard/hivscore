@@ -1,0 +1,14 @@
+url: https://jaromilfrossard.github.io/hivscore/
+template:
+  bootstrap: 5
+
+references:
+- title: Vacs Index 1
+  contents:
+  - has_concept("vacsindex1")
+- title: Vacs Index 2
+  contents:
+  - has_concept("vacsindex2")
+- title: Dat'AIDS score
+  contents:
+  - has_concept("dataids_score")
