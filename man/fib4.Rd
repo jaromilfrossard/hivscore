@@ -21,6 +21,9 @@ The FIB-4 index.
 \description{
 Fibrosis-4 Index for Liver Fibrosis formula
 }
+\references{
+Sterling, R. K., Lissen, E., Clumeck, N., Sola, R., Correa, M. C., Montaner, J., ... & Nelson, M. (2006). Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 43(6), 1317-1325.
+}
 \seealso{
 Other utils: 
 \code{\link{anemia}()},

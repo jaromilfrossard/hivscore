@@ -33,9 +33,10 @@ trim_num <- function(x, lowerl = NULL, upperl = NULL){
 #' @param sex Character. Either \code{"male"} or \code{"female"}.
 #' @param race Character. Either \code{"other"},\code{"white"}, \code{"black"}, \code{"hispano-american"}, \code{"asian"}, \code{"unknown"}. Specifying \code{race = "black"} change the formula of eGFR.
 #'
-#' @details See references for the formula.
+#' @details See references for the formula. \code{egfr()} uses the formula from Levey et al. (2009), and \code{egfr_norace()} uses the formula from Inker et al. (2021).
 #'
 #' @references Levey, A. S., Stevens, L. A., Schmid, C. H., Zhang, Y., Castro III, A. F., Feldman, H. I., ... & CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration)*. (2009). A new equation to estimate glomerular filtration rate. Annals of internal medicine, 150(9), 604-612.
+#' @references Inker, L. A., Eneanya, N. D., Coresh, J., Tighiouart, H., Wang, D., Sang, Y., ... & Levey, A. S. (2021). New creatinine-and cystatin C–based equations to estimate GFR without race. New England Journal of Medicine, 385(19), 1737-1749.
 #'
 #' @return A numeric
 #' @importFrom dplyr case_when
@@ -119,6 +120,7 @@ bmi <- function(mass,height){
 #' @param plt Numeric. Platelet count. \eqn{\times} 10^9/L.
 #'
 #' @return The FIB-4 index.
+#' @references Sterling, R. K., Lissen, E., Clumeck, N., Sola, R., Correa, M. C., Montaner, J., ... & Nelson, M. (2006). Development of a simple noninvasive index to predict significant fibrosis in patients with HIV/HCV coinfection. Hepatology, 43(6), 1317-1325.
 #' @export
 #' @family utils
 fib4 <- function(age, alt, ast , plt){

@@ -25,10 +25,12 @@ A numeric
 Estimated glomerular filtration rate formula
 }
 \details{
-See references for the formula.
+See references for the formula. \code{egfr()} uses the formula from Levey et al. (2009), and \code{egfr_norace()} uses the formula from Inker et al. (2021).
 }
 \references{
 Levey, A. S., Stevens, L. A., Schmid, C. H., Zhang, Y., Castro III, A. F., Feldman, H. I., ... & CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration)*. (2009). A new equation to estimate glomerular filtration rate. Annals of internal medicine, 150(9), 604-612.
+
+Inker, L. A., Eneanya, N. D., Coresh, J., Tighiouart, H., Wang, D., Sang, Y., ... & Levey, A. S. (2021). New creatinine-and cystatin C–based equations to estimate GFR without race. New England Journal of Medicine, 385(19), 1737-1749.
 }
 \seealso{
 Other utils: 

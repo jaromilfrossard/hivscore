@@ -50,7 +50,7 @@ Conversion of units.
 
 \code{conv_mul_to_mm3()}: \eqn{\mu}l to mm\eqn{^3}. x\eqn{1}.
 
-\code{conv_mm3_to_ml()}: mm\eqn{^3} to \eqn{\mu}l. x\eqn{1}.
+\code{conv_mm3_to_mul()}: mm\eqn{^3} to \eqn{\mu}l. x\eqn{1}.
 
 \code{conv_K.ml_to_K.mm3()}. count per ml to count per mm\eqn{^3}. \eqn{1/1000}.
 
