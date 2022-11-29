@@ -21,3 +21,13 @@ The FIB-4 index.
 \description{
 Fibrosis-4 Index for Liver Fibrosis formula
 }
+\seealso{
+Other utils: 
+\code{\link{anemia}()},
+\code{\link{bmi}()},
+\code{\link{egfr}()},
+\code{\link{low_bmi}()},
+\code{\link{trim_num}()},
+\code{\link{vl_log}()}
+}
+\concept{utils}

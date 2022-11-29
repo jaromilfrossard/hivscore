@@ -15,3 +15,13 @@ Numeric. The log 10 of the hiv1_rna.
 \description{
 Log 10 of the viral load
 }
+\seealso{
+Other utils: 
+\code{\link{anemia}()},
+\code{\link{bmi}()},
+\code{\link{egfr}()},
+\code{\link{fib4}()},
+\code{\link{low_bmi}()},
+\code{\link{trim_num}()}
+}
+\concept{utils}

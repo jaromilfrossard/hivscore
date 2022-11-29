@@ -15,12 +15,14 @@
 
 
 #' @export
+#' @family dataids
 #' @rdname baseline
 basesurv_hentzien2018 <- function(time){
   1-0.00562*time - 0.00057679*time^2
 }
 
 #' @export
+#' @family dataids
 #' @rdname baseline
 basesurv_riskgroup_hentzien2018 <- function(time){
   1-0.00610*time - 0.00050468*time^2

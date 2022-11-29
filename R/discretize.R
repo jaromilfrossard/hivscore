@@ -36,6 +36,7 @@ NULL
 
 
 #' @export
+#' @family dataids
 #' @rdname discretize
 discrete_age_dataids <- function(x){
   cut(x,
@@ -45,6 +46,7 @@ discrete_age_dataids <- function(x){
 }
 
 #' @export
+#' @family vacsindex1
 #' @rdname discretize
 discrete_age_vacs1 <- function(x){
   cut(x,
@@ -54,6 +56,7 @@ discrete_age_vacs1 <- function(x){
 }
 
 #' @export
+#' @family dataids
 #' @rdname discretize
 discrete_cd4_dataids <- function(x){
   cut(x,
@@ -63,6 +66,7 @@ discrete_cd4_dataids <- function(x){
 }
 
 #' @export
+#' @family vacsindex1
 #' @rdname discretize
 discrete_cd4_vacs1 <- function(x){
   cut(x,
@@ -72,6 +76,7 @@ discrete_cd4_vacs1 <- function(x){
 }
 
 #' @export
+#' @family dataids
 #' @rdname discretize
 discrete_egfr_dataids <- function(x){
   cut(x,
@@ -81,6 +86,7 @@ discrete_egfr_dataids <- function(x){
 }
 
 #' @export
+#' @family vacsindex1
 #' @rdname discretize
 discrete_egfr_vacs1 <- function(x){
   cut(x,
@@ -90,6 +96,7 @@ discrete_egfr_vacs1 <- function(x){
 }
 
 #' @export
+#' @family vacsindex1
 #' @rdname discretize
 discrete_fib4_vacs1 <- function(x){
   cut(x,
@@ -99,6 +106,7 @@ discrete_fib4_vacs1 <- function(x){
 }
 
 #' @export
+#' @family vacsindex1
 #' @rdname discretize
 discrete_hgb_vacs1 <- function(x){
   cut(x,
@@ -108,6 +116,7 @@ discrete_hgb_vacs1 <- function(x){
 }
 
 #' @export
+#' @family vacsindex1
 #' @rdname discretize
 discrete_hiv1rna_vacs1 <- function(x){
   cut(x,

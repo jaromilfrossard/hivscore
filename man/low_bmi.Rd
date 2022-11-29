@@ -15,3 +15,13 @@ Logical. TRUE if bmi < 18.5, FALSE otherwise.
 \description{
 Low bmi
 }
+\seealso{
+Other utils: 
+\code{\link{anemia}()},
+\code{\link{bmi}()},
+\code{\link{egfr}()},
+\code{\link{fib4}()},
+\code{\link{trim_num}()},
+\code{\link{vl_log}()}
+}
+\concept{utils}

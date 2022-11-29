@@ -64,3 +64,4 @@ Conversion of units.
 
 \code{conv_mg.dl_to_mumol.l()}. mg per dl to \eqn{\mu} mod per l. \eqn{1/0.0113096584483149}
 }
+\concept{convert}

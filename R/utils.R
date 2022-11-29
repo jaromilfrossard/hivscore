@@ -6,6 +6,7 @@
 #'
 #' @return a numerical vector
 #' @importFrom dplyr case_when
+#' @family utils
 trim_num <- function(x, lowerl = NULL, upperl = NULL){
   if(!is.null(lowerl)){
     x <- case_when(
@@ -27,18 +28,19 @@ trim_num <- function(x, lowerl = NULL, upperl = NULL){
 
 #' Estimated glomerular filtration rate formula
 #'
-#' @param scr Numeric. Serum creatinine \eqn{\mu} mol/l
+#' @param scr Numeric. Serum creatinine \eqn{\mu} mol/L
 #' @param age Numeric. Year.
-#' @param sex Character.
-#' @param race Character.
+#' @param sex Character. Either \code{"male"} or \code{"female"}.
+#' @param race Character. Either \code{"other"},\code{"white"}, \code{"black"}, \code{"hispano-american"}, \code{"asian"}, \code{"unknown"}. Specifying \code{race = "black"} change the formula of eGFR.
 #'
-#' @details The eGFR formula are is derived from
+#' @details See references for the formula.
 #'
-#' Levey, A. S., Stevens, L. A., Schmid, C. H., Zhang, Y., Castro III, A. F., Feldman, H. I., ... & CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration)*. (2009). A new equation to estimate glomerular filtration rate. Annals of internal medicine, 150(9), 604-612.
+#' @references Levey, A. S., Stevens, L. A., Schmid, C. H., Zhang, Y., Castro III, A. F., Feldman, H. I., ... & CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration)*. (2009). A new equation to estimate glomerular filtration rate. Annals of internal medicine, 150(9), 604-612.
 #'
 #' @return A numeric
 #' @importFrom dplyr case_when
 #' @name egfr
+#' @family utils
 
 
 
@@ -101,6 +103,7 @@ egfr_norace <- function(scr, age, sex){
 #'
 #' @return numeric.
 #' @export
+#' @family utils
 bmi <- function(mass,height){
   validate_mass(mass)
   validate_height(height)
@@ -117,6 +120,7 @@ bmi <- function(mass,height){
 #'
 #' @return The FIB-4 index.
 #' @export
+#' @family utils
 fib4 <- function(age, alt, ast , plt){
   validate_age(age)
   validate_alt(alt)
@@ -133,6 +137,7 @@ fib4 <- function(age, alt, ast , plt){
 #'
 #' @return Logical. TRUE if hgb < 13 g/dL. For female, TRUE if hgb < 12 g/dL.
 #' @export
+#' @family utils
 anemia <- function(hgb,sex){
   validate_hgb(hgb)
   validate_sex(sex)
@@ -148,6 +153,7 @@ anemia <- function(hgb,sex){
 #'
 #' @return Logical. TRUE if bmi < 18.5, FALSE otherwise.
 #' @export
+#' @family utils
 low_bmi <- function(bmi){
   validate_bmi(bmi)
   bmi<18.5
@@ -160,6 +166,7 @@ low_bmi <- function(bmi){
 #'
 #' @return Numeric. The log 10 of the hiv1_rna.
 #' @export
+#' @family utils
 vl_log <- function(hiv1_rna){
   validate_hiv1_rna(hiv1_rna)
   log10(hiv1_rna)

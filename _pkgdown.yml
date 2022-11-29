@@ -2,7 +2,7 @@ url: https://jaromilfrossard.github.io/hivscore/
 template:
   bootstrap: 5
 
-references:
+reference:
 - title: Vacs Index 1
   contents:
   - has_concept("vacsindex1")
@@ -11,4 +11,19 @@ references:
   - has_concept("vacsindex2")
 - title: Dat'AIDS score
   contents:
-  - has_concept("dataids_score")
+  - has_concept("dataids")
+- title: Helpers
+  desc: >
+   Function to prepare the predictors
+  contents:
+  - has_concept("utils")
+- title: Convertion of units
+  desc: >
+   Function to convert the units
+  contents:
+  - has_concept("convert")
+- title: test
+  contents:
+  - has_concept("vacs1")
+  - has_concept("vacs2")
+  - has_concept("dataids")

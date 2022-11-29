@@ -22,7 +22,6 @@
 #'
 #' @return Numeric. Predicted survival probability.
 #' @name dataids_score
-#' @family dataids_score
 #' @examples
 #' data(dataids)
 #' dataids$dataids <- score_dataids(
@@ -34,6 +33,7 @@ NULL
 
 
 #' @export
+#' @family dataids
 #' @rdname dataids_score
 surv_dataids <- function(time,score = NULL,
                          basesurv_fun = basesurv_hentzien2018,
@@ -54,6 +54,7 @@ surv_dataids <- function(time,score = NULL,
 
 
 #' @export
+#' @family dataids
 #' @rdname dataids_score
 eta_dataids <- function(score = NULL,
                          beta_score = 0.1008354015,
@@ -73,6 +74,7 @@ eta_dataids <- function(score = NULL,
 
 
 #' @export
+#' @family dataids
 #' @rdname dataids_score
 eta_riskgroupdataids <- function(score = NULL,
                         beta_score = c(

@@ -17,3 +17,13 @@ numeric.
 \description{
 BMI formula
 }
+\seealso{
+Other utils: 
+\code{\link{anemia}()},
+\code{\link{egfr}()},
+\code{\link{fib4}()},
+\code{\link{low_bmi}()},
+\code{\link{trim_num}()},
+\code{\link{vl_log}()}
+}
+\concept{utils}

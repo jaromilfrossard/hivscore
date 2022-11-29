@@ -26,3 +26,13 @@ Baseline Function
 \references{
 Hentzien M, Delpierre C, Pugliese P, Allavena C, Jacomet C, Valantin M-A, et al. (2018) Derivation and internal validation of a mortality risk index for aged people living with HIV: The Dat'AIDS score. PLoS ONE 13(4): e0195725. https://doi.org/10.1371/journal.pone.0195725
 }
+\seealso{
+Other dataids: 
+\code{\link{dataids_score}},
+\code{\link{discretize}}
+
+Other dataids: 
+\code{\link{dataids_score}},
+\code{\link{discretize}}
+}
+\concept{dataids}

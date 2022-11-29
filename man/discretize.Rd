@@ -69,3 +69,36 @@ vacs2_d <-
     hgb_d = discrete_fib4_vacs1(vacs2$HGB))
 head(vacs2_d)
 }
+\seealso{
+Other dataids: 
+\code{\link{baseline}},
+\code{\link{dataids_score}}
+
+Other vacsindex1: 
+\code{\link{vacsindex1}}
+
+Other dataids: 
+\code{\link{baseline}},
+\code{\link{dataids_score}}
+
+Other vacsindex1: 
+\code{\link{vacsindex1}}
+
+Other dataids: 
+\code{\link{baseline}},
+\code{\link{dataids_score}}
+
+Other vacsindex1: 
+\code{\link{vacsindex1}}
+
+Other vacsindex1: 
+\code{\link{vacsindex1}}
+
+Other vacsindex1: 
+\code{\link{vacsindex1}}
+
+Other vacsindex1: 
+\code{\link{vacsindex1}}
+}
+\concept{dataids}
+\concept{vacsindex1}

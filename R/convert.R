@@ -29,24 +29,28 @@ NULL
 
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_g.ml_to_g.dl <- function(x){
   x/100
 }
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_g.dl_to_g.ml <- function(x){
   x*100
 }
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_mul_to_mm3 <- function(x){
   x
 }
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_mm3_to_mul <- function(x){
   x
@@ -55,24 +59,28 @@ conv_mm3_to_mul <- function(x){
 
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_K.ml_to_K.mm3 <- function(x){
   x/1000L
 }
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_K.mm3_to_K.ml <- function(x){
   x*1000L
 }
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_cm_to_m <- function(x){
   x/100L
 }
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_m_to_cm <- function(x){
   x*100L
@@ -80,12 +88,14 @@ conv_m_to_cm <- function(x){
 
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_mumol.l_to_mg.dl <- function(x){
   x*0.0113096584483149
 }
 
 #'@export
+#'@family convert
 #'@rdname convert
 conv_mg.dl_to_mumol.l <- function(x){
   x/0.0113096584483149

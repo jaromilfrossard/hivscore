@@ -10,13 +10,13 @@ egfr(scr, age, sex, race)
 egfr_norace(scr, age, sex)
 }
 \arguments{
-\item{scr}{Numeric. Serum creatinine \eqn{\mu} mol/l}
+\item{scr}{Numeric. Serum creatinine \eqn{\mu} mol/L}
 
 \item{age}{Numeric. Year.}
 
-\item{sex}{Character.}
+\item{sex}{Character. Either \code{"male"} or \code{"female"}.}
 
-\item{race}{Character.}
+\item{race}{Character. Either \code{"other"},\code{"white"}, \code{"black"}, \code{"hispano-american"}, \code{"asian"}, \code{"unknown"}. Specifying \code{race = "black"} change the formula of eGFR.}
 }
 \value{
 A numeric
@@ -25,7 +25,18 @@ A numeric
 Estimated glomerular filtration rate formula
 }
 \details{
-The eGFR formula are is derived from
-
+See references for the formula.
+}
+\references{
 Levey, A. S., Stevens, L. A., Schmid, C. H., Zhang, Y., Castro III, A. F., Feldman, H. I., ... & CKD-EPI (Chronic Kidney Disease Epidemiology Collaboration)*. (2009). A new equation to estimate glomerular filtration rate. Annals of internal medicine, 150(9), 604-612.
 }
+\seealso{
+Other utils: 
+\code{\link{anemia}()},
+\code{\link{bmi}()},
+\code{\link{fib4}()},
+\code{\link{low_bmi}()},
+\code{\link{trim_num}()},
+\code{\link{vl_log}()}
+}
+\concept{utils}
