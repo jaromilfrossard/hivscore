@@ -21,7 +21,6 @@ Other utils:
 \code{\link{bmi}()},
 \code{\link{egfr}()},
 \code{\link{fib4}()},
-\code{\link{low_bmi}()},
-\code{\link{trim_num}()}
+\code{\link{low_bmi}()}
 }
 \concept{utils}

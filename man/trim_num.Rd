@@ -19,13 +19,4 @@ a numerical vector
 \description{
 Trim numerical vector
 }
-\seealso{
-Other utils: 
-\code{\link{anemia}()},
-\code{\link{bmi}()},
-\code{\link{egfr}()},
-\code{\link{fib4}()},
-\code{\link{low_bmi}()},
-\code{\link{vl_log}()}
-}
-\concept{utils}
+\keyword{internal}

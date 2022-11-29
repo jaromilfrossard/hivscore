@@ -28,4 +28,10 @@ vacs1
 \description{
 A simulated dataset
 }
+\seealso{
+Other dataset: 
+\code{\link{dataids}},
+\code{\link{vacs2}}
+}
+\concept{dataset}
 \keyword{datasets}

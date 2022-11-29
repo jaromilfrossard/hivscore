@@ -18,6 +18,7 @@
 #'   \item{vacs1}{Integer. Score Vacs Index 1.}
 #'   \item{vacs2}{Numeric. Score Vacs Index 2.}
 #' }
+#' @family dataset
 "vacs1"
 
 
@@ -42,6 +43,7 @@
 #'   \item{SCORE_V2}{Vacs Index 2.}
 #' }
 #' @source \url{https://pubmed.ncbi.nlm.nih.gov/34609485/}
+#' @family dataset
 "vacs2"
 
 
@@ -64,4 +66,5 @@
 #'   \item{SCORE_DATAIDS}{Numeric. Score Dat'Aids}
 #' }
 #' @source \url{https://doi.org/10.1371/journal.pone.0195725/}
+#' @family dataset
 "dataids"

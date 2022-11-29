@@ -36,7 +36,6 @@ Other utils:
 \code{\link{bmi}()},
 \code{\link{fib4}()},
 \code{\link{low_bmi}()},
-\code{\link{trim_num}()},
 \code{\link{vl_log}()}
 }
 \concept{utils}

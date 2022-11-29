@@ -6,7 +6,7 @@
 #'
 #' @return a numerical vector
 #' @importFrom dplyr case_when
-#' @family utils
+#' @keywords internal
 trim_num <- function(x, lowerl = NULL, upperl = NULL){
   if(!is.null(lowerl)){
     x <- case_when(

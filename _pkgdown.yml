@@ -19,11 +19,11 @@ reference:
   - has_concept("utils")
 - title: Convertion of units
   desc: >
-   Function to convert the units
+   Function to convert several units
   contents:
   - has_concept("convert")
-- title: test
+- title: Dataset
+  desc: >
+   Testing dataset
   contents:
-  - has_concept("vacs1")
-  - has_concept("vacs2")
-  - has_concept("dataids")
+  - has_concept("dataset")

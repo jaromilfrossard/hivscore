@@ -31,4 +31,10 @@ vacs2
 \description{
 A dataset containing the testing data in the supplementary material of doi: 10.1093/cid/ciab883
 }
+\seealso{
+Other dataset: 
+\code{\link{dataids}},
+\code{\link{vacs1}}
+}
+\concept{dataset}
 \keyword{datasets}

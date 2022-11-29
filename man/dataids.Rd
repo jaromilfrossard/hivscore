@@ -27,4 +27,10 @@ dataids
 \description{
 A dataset for testing the DAT'aids score
 }
+\seealso{
+Other dataset: 
+\code{\link{vacs1}},
+\code{\link{vacs2}}
+}
+\concept{dataset}
 \keyword{datasets}
