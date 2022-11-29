@@ -1,4 +1,4 @@
-#' Discretization of numeric variable used in the DAT'aids and VACS Index 1
+#' Discretization of the numeric variables used in the DAT'aids and in the VACS Index 1
 #'
 #' @param x Numeric variable to discretize.
 #'

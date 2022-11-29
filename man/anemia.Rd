@@ -9,10 +9,10 @@ anemia(hgb, sex)
 \arguments{
 \item{hgb}{Numeric. Hemoglobine. g/dL.}
 
-\item{sex}{Character.}
+\item{sex}{Character. Either \code{"male"} or \code{"female"}.}
 }
 \value{
-Logical. TRUE if hgb < 13 g/dL. For female, TRUE if hgb < 12 g/dL.
+Logical. TRUE if \code{hgb} < 13 g/dL. For female, TRUE if \code{hgb} < 12 g/dL.
 }
 \description{
 Anemia
@@ -22,7 +22,6 @@ Other utils:
 \code{\link{bmi}()},
 \code{\link{egfr}()},
 \code{\link{fib4}()},
-\code{\link{low_bmi}()},
-\code{\link{vl_log}()}
+\code{\link{low_bmi}()}
 }
 \concept{utils}

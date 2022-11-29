@@ -1,4 +1,6 @@
-#' Compute the DAT'aids survival prediction
+#' DAT'aids
+#'
+#' Compute the DAT'aids score and survival prediction
 #'
 #' @param time Numeric. Time of prediction in year.
 #' @param basesurv_fun Function of \code{time}. Default is \code{basesurv_hentzien2018}.
@@ -17,6 +19,8 @@
 #' @details The prediction of survival at time t is:
 #' \deqn{\hat{S}(t) = S_0(t)^{\exp{b*\text{score}}}},
 #' where \eqn{S_0(t)} is \code{basesurv_fun} and \eqn{b} is \code{beta_score}.
+#'
+#' \code{score_dataids()} returns a numerical vector, \code{points_dataids()} returns a list of the parameters used to compute the VACS Index 1 and \code{surv_dataids()} returns the survival probabilities a the baseline survival function.
 #'
 #' @references Hentzien M, Delpierre C, Pugliese P, Allavena C, Jacomet C, Valantin M-A, et al. (2018) Derivation and internal validation of a mortality risk index for aged people living with HIV: The Dat'AIDS score. PLoS ONE 13(4): e0195725. https://doi.org/10.1371/journal.pone.0195725
 #'

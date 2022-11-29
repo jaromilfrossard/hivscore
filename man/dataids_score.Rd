@@ -8,7 +8,7 @@
 \alias{score_dataids}
 \alias{riskgroup_dataids}
 \alias{points_dataids}
-\title{Compute the DAT'aids survival prediction}
+\title{DAT'aids}
 \usage{
 surv_dataids(
   time,
@@ -97,12 +97,14 @@ points_dataids()
 Numeric. Predicted survival probability.
 }
 \description{
-Compute the DAT'aids survival prediction
+Compute the DAT'aids score and survival prediction
 }
 \details{
 The prediction of survival at time t is:
 \deqn{\hat{S}(t) = S_0(t)^{\exp{b*\text{score}}}},
 where \eqn{S_0(t)} is \code{basesurv_fun} and \eqn{b} is \code{beta_score}.
+
+\code{score_dataids()} returns a numerical vector, \code{points_dataids()} returns a list of the parameters used to compute the VACS Index 1 and \code{surv_dataids()} returns the survival probabilities a the baseline survival function.
 }
 \examples{
 data(dataids)

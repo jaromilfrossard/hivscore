@@ -4,7 +4,7 @@
 \alias{vacsindex1}
 \alias{score_vacsindex1}
 \alias{points_vacsindex1}
-\title{Compute the VACS Index 1}
+\title{VACS Index 1}
 \usage{
 score_vacsindex1(age, cd4_count, hiv1_rna, hgb, fib4, egfr, hepc)
 
@@ -26,10 +26,10 @@ points_vacsindex1()
 \item{hepc}{Logical. TRUE for co-infection with hepatitis C virus.}
 }
 \value{
-A numerical vector.
+\code{score_vacsindex1()} returns a numerical vector and \code{points_vacsindex1()} returns a list of the parameters used to compute the VACS Index 1.
 }
 \description{
-Compute the VACS Index 1
+Compute the VACS Index 1 given the predictors.
 }
 \examples{
 data("vacs1")

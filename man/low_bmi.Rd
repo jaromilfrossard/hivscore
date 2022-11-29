@@ -20,7 +20,6 @@ Other utils:
 \code{\link{anemia}()},
 \code{\link{bmi}()},
 \code{\link{egfr}()},
-\code{\link{fib4}()},
-\code{\link{vl_log}()}
+\code{\link{fib4}()}
 }
 \concept{utils}

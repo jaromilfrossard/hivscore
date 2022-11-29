@@ -1,3 +1,5 @@
+#' VACS Index 2
+#'
 #' Compute the VACS Index 2.
 #'
 # @param time Numeric.
@@ -14,7 +16,7 @@
 #' @param bmi Numeric. Body mass index. m/kg\eqn{^2}.
 #' @param wbc Numeric. White blood cell. \eqn{10^3} count/µL.
 #'
-#' @return A numerical vector.
+#' @return \code{score_vacsindex2()} returns a numerical vector and \code{points_vacsindex2()} returns a list of the parameters used to compute the VACS Index 2.
 #'
 #' @references Tate, J. P., Sterne, J. A., Justice, A. C., Study, V. A. C., & Antiretroviral Therapy Cohort Collaboration (ART-CC. (2019). Albumin, white blood cell count, and body mass index improve discrimination of mortality in HIV-positive individuals. AIDS (London, England), 33(5), 903.
 #' @references McGinnis, K. A., Justice, A. C., Moore, R. D., Silverberg, M. J., Althoff, K. N., Karris, M., ... & Study, V. A. C. (2021). Discrimination And Calibration Of The Vacs Index 2.0 For Predicting Mortality Among People With Hiv In North America. Clinical Infectious Diseases: an Official Publication of the Infectious Diseases Society of America.

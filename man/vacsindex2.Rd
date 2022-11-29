@@ -4,7 +4,7 @@
 \alias{vacsindex2}
 \alias{score_vacsindex2}
 \alias{points_vacindex2}
-\title{Compute the VACS Index 2.}
+\title{VACS Index 2}
 \usage{
 score_vacsindex2(age, cd4_count, vl_log, hgb, fib4, egfr, hepc, alb, bmi, wbc)
 
@@ -32,7 +32,7 @@ points_vacindex2()
 \item{wbc}{Numeric. White blood cell. \eqn{10^3} count/µL.}
 }
 \value{
-A numerical vector.
+\code{score_vacsindex2()} returns a numerical vector and \code{points_vacsindex2()} returns a list of the parameters used to compute the VACS Index 2.
 }
 \description{
 Compute the VACS Index 2.

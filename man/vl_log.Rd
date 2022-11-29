@@ -7,7 +7,7 @@
 vl_log(hiv1_rna)
 }
 \arguments{
-\item{hiv1_rna}{Numeric. Viral Load. count/ml.}
+\item{hiv1_rna}{Numeric. Viral Load. Count/ml.}
 }
 \value{
 Numeric. The log 10 of the hiv1_rna.
@@ -15,12 +15,4 @@ Numeric. The log 10 of the hiv1_rna.
 \description{
 Log 10 of the viral load
 }
-\seealso{
-Other utils: 
-\code{\link{anemia}()},
-\code{\link{bmi}()},
-\code{\link{egfr}()},
-\code{\link{fib4}()},
-\code{\link{low_bmi}()}
-}
-\concept{utils}
+\keyword{internal}

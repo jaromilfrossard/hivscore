@@ -11,7 +11,7 @@
 \alias{discrete_fib4_vacs1}
 \alias{discrete_hgb_vacs1}
 \alias{discrete_hiv1rna_vacs1}
-\title{Discretization of numeric variable used in the DAT'aids and VACS Index 1}
+\title{Discretization of the numeric variables used in the DAT'aids and in the VACS Index 1}
 \usage{
 discrete_age_dataids(x)
 
@@ -38,7 +38,7 @@ discrete_hiv1rna_vacs1(x)
 Factor.
 }
 \description{
-Discretization of numeric variable used in the DAT'aids and VACS Index 1
+Discretization of the numeric variables used in the DAT'aids and in the VACS Index 1
 }
 \examples{
 data(dataids)

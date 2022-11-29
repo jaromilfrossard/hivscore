@@ -37,7 +37,6 @@ Other utils:
 \code{\link{anemia}()},
 \code{\link{bmi}()},
 \code{\link{fib4}()},
-\code{\link{low_bmi}()},
-\code{\link{vl_log}()}
+\code{\link{low_bmi}()}
 }
 \concept{utils}

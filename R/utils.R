@@ -135,9 +135,9 @@ fib4 <- function(age, alt, ast , plt){
 #' Anemia
 #'
 #' @param hgb Numeric. Hemoglobine. g/dL.
-#' @param sex Character.
+#' @param sex Character. Either \code{"male"} or \code{"female"}.
 #'
-#' @return Logical. TRUE if hgb < 13 g/dL. For female, TRUE if hgb < 12 g/dL.
+#' @return Logical. TRUE if \code{hgb} < 13 g/dL. For female, TRUE if \code{hgb} < 12 g/dL.
 #' @export
 #' @family utils
 anemia <- function(hgb,sex){
@@ -164,11 +164,10 @@ low_bmi <- function(bmi){
 
 #' Log 10 of the viral load
 #'
-#' @param hiv1_rna Numeric. Viral Load. count/ml.
+#' @param hiv1_rna Numeric. Viral Load. Count/ml.
 #'
 #' @return Numeric. The log 10 of the hiv1_rna.
-#' @export
-#' @family utils
+#' @keywords internal
 vl_log <- function(hiv1_rna){
   validate_hiv1_rna(hiv1_rna)
   log10(hiv1_rna)

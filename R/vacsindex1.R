@@ -1,4 +1,6 @@
-#' Compute the VACS Index 1
+#' VACS Index 1
+#'
+#' Compute the VACS Index 1 given the predictors.
 #'
 # @param time Numeric. Time of prediction in year.
 # @param baseline_fun Function of \code{time}.
@@ -11,7 +13,8 @@
 #' @param egfr Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).
 #' @param hepc Logical. TRUE for co-infection with hepatitis C virus.
 #'
-#' @return A numerical vector.
+#' @return \code{score_vacsindex1()} returns a numerical vector and \code{points_vacsindex1()} returns a list of the parameters used to compute the VACS Index 1.
+#'
 #'
 #' @references Tate, J. P., Justice, A. C., Hughes, M. D., Bonnet, F., Reiss, P., Mocroft, A., ... & Sterne, J. A. (2013). An internationally generalizable risk index for mortality after one year of antiretroviral therapy. AIDS (London, England), 27(4), 563.
 #' @references Bebu, I., Tate, J., Rimland, D., Mesner, O., Macalino, G. E., Ganesan, A., ... & Infectious Disease Clinical Research Program HIV Working Group. (2014). The VACS index predicts mortality in a young, healthy HIV population starting highly active antiretroviral therapy. Journal of acquired immune deficiency syndromes (1999), 65(2), 226.
