@@ -7,7 +7,7 @@
 # @param score Numeric. Vacs Index 2 score. If NULL, it will be computed based on the predictors.
 #' @param age Numeric. Year.
 #' @param cd4_count Numeric. CD4 cell count. cell/mm\eqn{^3}.
-#' @param vl_log Numeric. log 10 of viral load.
+#' @param vl_log Numeric. Log 10 of viral load.
 #' @param hgb Numeric. Hemoglobin. g/dL.
 #' @param fib4 Numeric. Fibrosis-4 Index for Liver Fibrosis.
 #' @param egfr Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).

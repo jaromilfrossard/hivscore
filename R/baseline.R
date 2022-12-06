@@ -1,4 +1,4 @@
-#' Baseline Function
+#' Baseline survival function
 #'
 #' @param time Numeric. Time in year.
 #'

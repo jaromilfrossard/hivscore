@@ -8,7 +8,7 @@
 \alias{score_dataids}
 \alias{riskgroup_dataids}
 \alias{points_dataids}
-\title{DAT'aids}
+\title{Dat'AIDS score}
 \usage{
 surv_dataids(
   time,
@@ -69,7 +69,7 @@ points_dataids()
 \arguments{
 \item{time}{Numeric. Time of prediction in year.}
 
-\item{score}{Numeric. DAT'aids score. If NULL, it will be computed based on the predictors.}
+\item{score}{Numeric. Dat'AIDS score. If \code{NULL}, the score is computed using the predictors.}
 
 \item{basesurv_fun}{Function of \code{time}. Default is \code{basesurv_hentzien2018}.}
 
@@ -77,19 +77,19 @@ points_dataids()
 
 \item{age}{Numeric. Age in year.}
 
-\item{cd4_count}{Numeric. Count of cd4 cell/mm\eqn{^3}.}
+\item{cd4_count}{Numeric. Count of CD4 cell/mm\eqn{^3}.}
 
-\item{nonhiv_cancer}{Logical. TRUE for diagnosis of non-hiv cancer.}
+\item{nonhiv_cancer}{Logical. \code{TRUE} for diagnosis of non-HIV cancer.}
 
-\item{cardio_disease}{Logical. TRUE for diagnosis of cardio vascular disease.}
+\item{cardio_disease}{Logical. \code{TRUE} for diagnosis of cardiovascular disease.}
 
 \item{egfr}{Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).}
 
-\item{cirrhosis}{Logical. TRUE for cirrhosis diagnostic.}
+\item{cirrhosis}{Logical. \code{TRUE} for cirrhosis diagnostic.}
 
-\item{low_bmi}{Logical. TRUE if BMI < 18.5.}
+\item{low_bmi}{Logical. \code{TRUE} if BMI < 18.5.}
 
-\item{anemia}{Logical. TRUE for anemia defined as hemoglobin <12g/dL for female and <13g/dL for male.}
+\item{anemia}{Logical. \code{TRUE} for anemia defined as hemoglobin <12g/dL for female and <13g/dL for male.}
 
 \item{beta_score}{Numberic. Default is \code{0.1008354015} for continuous score and \code{c("0-3"=0, "4-13"=0.81868, "14-19"=1.76034, ">=20"=2.61992)} for risk group. Parameter associated to the score.}
 }
@@ -97,7 +97,7 @@ points_dataids()
 Numeric. Predicted survival probability.
 }
 \description{
-Compute the DAT'aids score and survival prediction
+Compute the Dat'AIDS score and survival prediction
 }
 \details{
 The prediction of survival at time t is:
@@ -119,15 +119,12 @@ Hentzien M, Delpierre C, Pugliese P, Allavena C, Jacomet C, Valantin M-A, et al.
 }
 \seealso{
 Other dataids: 
-\code{\link{baseline}},
-\code{\link{discretize}}
+\code{\link{baseline}}
 
 Other dataids: 
-\code{\link{baseline}},
-\code{\link{discretize}}
+\code{\link{baseline}}
 
 Other dataids: 
-\code{\link{baseline}},
-\code{\link{discretize}}
+\code{\link{baseline}}
 }
 \concept{dataids}

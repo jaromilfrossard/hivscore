@@ -22,6 +22,11 @@ reference:
    Function to convert several units
   contents:
   - has_concept("convert")
+- title: Discretization
+  desc: >
+   Function to discretized numeric variables
+  contents:
+  - has_concept("discrete")
 - title: Dataset
   desc: >
    Testing dataset

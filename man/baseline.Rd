@@ -4,7 +4,7 @@
 \alias{baseline}
 \alias{basesurv_hentzien2018}
 \alias{basesurv_riskgroup_hentzien2018}
-\title{Baseline Function}
+\title{Baseline survival function}
 \usage{
 basesurv_hentzien2018(time)
 
@@ -14,7 +14,7 @@ basesurv_riskgroup_hentzien2018(time)
 \item{time}{Numeric. Time in year.}
 }
 \description{
-Baseline Function
+Baseline survival function
 }
 \details{
 \code{basesurv_hentzien2018} is given by Hentzien (2018):
@@ -28,11 +28,9 @@ Hentzien M, Delpierre C, Pugliese P, Allavena C, Jacomet C, Valantin M-A, et al.
 }
 \seealso{
 Other dataids: 
-\code{\link{dataids_score}},
-\code{\link{discretize}}
+\code{\link{dataids_score}}
 
 Other dataids: 
-\code{\link{dataids_score}},
-\code{\link{discretize}}
+\code{\link{dataids_score}}
 }
 \concept{dataids}

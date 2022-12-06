@@ -11,7 +11,7 @@
 \alias{discrete_fib4_vacs1}
 \alias{discrete_hgb_vacs1}
 \alias{discrete_hiv1rna_vacs1}
-\title{Discretization of the numeric variables used in the DAT'aids and in the VACS Index 1}
+\title{Discretization of the numeric variables used in the VACS Index 1 and Dat'AIDS score}
 \usage{
 discrete_age_dataids(x)
 
@@ -38,7 +38,7 @@ discrete_hiv1rna_vacs1(x)
 Factor.
 }
 \description{
-Discretization of the numeric variables used in the DAT'aids and in the VACS Index 1
+Discretization of the numeric variables used in the VACS Index 1 and Dat'AIDS score
 }
 \examples{
 data(dataids)
@@ -69,36 +69,4 @@ vacs2_d <-
     hgb_d = discrete_fib4_vacs1(vacs2$HGB))
 head(vacs2_d)
 }
-\seealso{
-Other dataids: 
-\code{\link{baseline}},
-\code{\link{dataids_score}}
-
-Other vacsindex1: 
-\code{\link{vacsindex1}}
-
-Other dataids: 
-\code{\link{baseline}},
-\code{\link{dataids_score}}
-
-Other vacsindex1: 
-\code{\link{vacsindex1}}
-
-Other dataids: 
-\code{\link{baseline}},
-\code{\link{dataids_score}}
-
-Other vacsindex1: 
-\code{\link{vacsindex1}}
-
-Other vacsindex1: 
-\code{\link{vacsindex1}}
-
-Other vacsindex1: 
-\code{\link{vacsindex1}}
-
-Other vacsindex1: 
-\code{\link{vacsindex1}}
-}
-\concept{dataids}
-\concept{vacsindex1}
+\concept{discrete}

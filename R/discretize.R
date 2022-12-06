@@ -1,4 +1,4 @@
-#' Discretization of the numeric variables used in the DAT'aids and in the VACS Index 1
+#' Discretization of the numeric variables used in the VACS Index 1 and Dat'AIDS score
 #'
 #' @param x Numeric variable to discretize.
 #'
@@ -36,7 +36,7 @@ NULL
 
 
 #' @export
-#' @family dataids
+#' @family discrete
 #' @rdname discretize
 discrete_age_dataids <- function(x){
   cut(x,
@@ -46,7 +46,7 @@ discrete_age_dataids <- function(x){
 }
 
 #' @export
-#' @family vacsindex1
+#' @family discrete
 #' @rdname discretize
 discrete_age_vacs1 <- function(x){
   cut(x,
@@ -56,7 +56,7 @@ discrete_age_vacs1 <- function(x){
 }
 
 #' @export
-#' @family dataids
+#' @family discrete
 #' @rdname discretize
 discrete_cd4_dataids <- function(x){
   cut(x,
@@ -66,7 +66,7 @@ discrete_cd4_dataids <- function(x){
 }
 
 #' @export
-#' @family vacsindex1
+#' @family discrete
 #' @rdname discretize
 discrete_cd4_vacs1 <- function(x){
   cut(x,
@@ -76,7 +76,7 @@ discrete_cd4_vacs1 <- function(x){
 }
 
 #' @export
-#' @family dataids
+#' @family discrete
 #' @rdname discretize
 discrete_egfr_dataids <- function(x){
   cut(x,
@@ -86,7 +86,7 @@ discrete_egfr_dataids <- function(x){
 }
 
 #' @export
-#' @family vacsindex1
+#' @family discrete
 #' @rdname discretize
 discrete_egfr_vacs1 <- function(x){
   cut(x,
@@ -96,7 +96,7 @@ discrete_egfr_vacs1 <- function(x){
 }
 
 #' @export
-#' @family vacsindex1
+#' @family discrete
 #' @rdname discretize
 discrete_fib4_vacs1 <- function(x){
   cut(x,
@@ -106,7 +106,7 @@ discrete_fib4_vacs1 <- function(x){
 }
 
 #' @export
-#' @family vacsindex1
+#' @family discrete
 #' @rdname discretize
 discrete_hgb_vacs1 <- function(x){
   cut(x,
@@ -116,7 +116,7 @@ discrete_hgb_vacs1 <- function(x){
 }
 
 #' @export
-#' @family vacsindex1
+#' @family discrete
 #' @rdname discretize
 discrete_hiv1rna_vacs1 <- function(x){
   cut(x,

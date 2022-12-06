@@ -1,20 +1,20 @@
-#' DAT'aids
+#' Dat'AIDS score
 #'
-#' Compute the DAT'aids score and survival prediction
+#' Compute the Dat'AIDS score and survival prediction
 #'
 #' @param time Numeric. Time of prediction in year.
 #' @param basesurv_fun Function of \code{time}. Default is \code{basesurv_hentzien2018}.
 #' @param beta_score Numberic. Default is \code{0.1008354015} for continuous score and \code{c("0-3"=0, "4-13"=0.81868, "14-19"=1.76034, ">=20"=2.61992)} for risk group. Parameter associated to the score.
 #' @param eta_fun Function of the score which returns the linear predictor. Default is \code{eta_dataids} and \code{eta_riskgroupdataids} is available.
-#' @param score Numeric. DAT'aids score. If NULL, it will be computed based on the predictors.
+#' @param score Numeric. Dat'AIDS score. If \code{NULL}, the score is computed using the predictors.
 #' @param age Numeric. Age in year.
-#' @param cd4_count Numeric. Count of cd4 cell/mm\eqn{^3}.
-#' @param nonhiv_cancer Logical. TRUE for diagnosis of non-hiv cancer.
-#' @param cardio_disease Logical. TRUE for diagnosis of cardio vascular disease.
+#' @param cd4_count Numeric. Count of CD4 cell/mm\eqn{^3}.
+#' @param nonhiv_cancer Logical. \code{TRUE} for diagnosis of non-HIV cancer.
+#' @param cardio_disease Logical. \code{TRUE} for diagnosis of cardiovascular disease.
 #' @param egfr Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).
-#' @param cirrhosis Logical. TRUE for cirrhosis diagnostic.
-#' @param low_bmi Logical. TRUE if BMI < 18.5.
-#' @param anemia Logical. TRUE for anemia defined as hemoglobin <12g/dL for female and <13g/dL for male.
+#' @param cirrhosis Logical. \code{TRUE} for cirrhosis diagnostic.
+#' @param low_bmi Logical. \code{TRUE} if BMI < 18.5.
+#' @param anemia Logical. \code{TRUE} for anemia defined as hemoglobin <12g/dL for female and <13g/dL for male.
 #'
 #' @details The prediction of survival at time t is:
 #' \deqn{\hat{S}(t) = S_0(t)^{\exp{b*\text{score}}}},

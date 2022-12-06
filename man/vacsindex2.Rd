@@ -15,7 +15,7 @@ points_vacindex2()
 
 \item{cd4_count}{Numeric. CD4 cell count. cell/mm\eqn{^3}.}
 
-\item{vl_log}{Numeric. log 10 of viral load.}
+\item{vl_log}{Numeric. Log 10 of viral load.}
 
 \item{hgb}{Numeric. Hemoglobin. g/dL.}
 

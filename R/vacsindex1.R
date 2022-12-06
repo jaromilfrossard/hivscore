@@ -4,12 +4,12 @@
 #'
 # @param time Numeric. Time of prediction in year.
 # @param baseline_fun Function of \code{time}.
-# @param score Numeric. VACS index 1 score. If NULL, it will be computed based on the predictors.
+# @param score Numeric. VACS index 1 score. If \code{NULL}, it will be computed based on the predictors.
 #' @param age Numeric. Age in years.
 #' @param cd4_count Numeric. CD4 cell count. cell/mm\eqn{^3}.
 #' @param hiv1_rna Numeric. Viral load. copies/mL.
 #' @param hgb Numeric. Hemoglobin. g/dL.
-#' @param fib4 Numeric. Fibrosis-4 Index for Liver Fibrosis.
+#' @param fib4 Numeric. Fibrosis-4 Index for liver fibrosis.
 #' @param egfr Numeric. Estimated glomerular filtration rate. (ml/min/1.73m\eqn{^2}).
 #' @param hepc Logical. TRUE for co-infection with hepatitis C virus.
 #'
